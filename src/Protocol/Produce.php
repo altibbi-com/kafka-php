@@ -37,7 +37,7 @@ class Produce extends Protocol
     {
         parent::__construct($version);
 
-        $this->clock = $clock ?: new SystemClock();
+        $this->clock = $clock ?: SystemClock::fromUTC();
     }
 
     /**
